@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	스프링 설정 파일
+	- beans
+	- <bean> : 자바 객체 1개
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- 
+		스프링이 관리하는 객체 > Spring Bean
+		
+		Pen p1 = new Pen();
+	-->
+	<!-- bean 등록 > 스프링이 관리하는 대상으로 등록 -->
+	<bean id="pen" class="com.test.spring.di02.Pen"></bean>
+	
+	<!-- name: alias -->
+	<bean id="brush" name="b1 b2 b3 myBrush" class="com.test.spring.di02.Brush"></bean>
+	
+	<!--
+		아까 구현한 건 순수 자바로 구현한 DI
+		지금 구현하는 건 Spring이 지원하는 DI 구현 > Spring DI
+	-->
+	<bean id="hong" class="com.test.spring.di02.Hong">
+		<constructor-arg ref="pen"></constructor-arg>
+	</bean>	
+</beans>        
