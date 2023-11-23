@@ -3,5 +3,7 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\23207
 \BeginTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\12654150.index
 \WebTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3080424700.index
+\MyBatisTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2896869189.index
 \WebTest\src\main\java

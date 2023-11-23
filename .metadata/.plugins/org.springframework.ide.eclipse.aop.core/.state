@@ -6,4 +6,5 @@
 <aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:BeginTest|3:src/main/java/com/test/spring/aop1/memo.xml|7:beans:7|8:memo:21" bean-file="/BeginTest/src/main/java/com/test/spring/aop1/memo.xml" bean-start-line="21" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BeginTest/src/main/java/com/test/spring/aop1/memo.xml" source="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.spring.aop1{Logger.java[Logger~check~QException;" source-start-line="41" target="=BeginTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.spring.aop1{MemoImpl.java[MemoImpl~read~I" target-start-line="25"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="MyBatisTest"/>
 </aop-reference-model>
