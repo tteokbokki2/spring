@@ -12,3 +12,7 @@ create sequence seqMyBatis;
 
 insert into tblMyBatis (seq, name, age, address, gender)
     values (seqMyBatis.nextVal, '홍길동', 20, '서울시 강남구 역삼동', 'm');
+    
+select * from tblMyBatis;
+
+commit;

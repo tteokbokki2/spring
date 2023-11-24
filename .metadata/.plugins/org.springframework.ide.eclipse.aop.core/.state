@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="Code"/>
 <aop-project name="WebTest"/>
 <aop-project name="BeginTest">
 <aspect-definition advice-class-name="com.test.spring.aop1.Logger" advice-method-name="check" advice-type="AFTER_THROWING" aspect-end-line-number="95" aspect-name="logger" aspect-start-line-number="95" factory-id="org.springframework.ide.eclipse.aop.core.beanAspectDefinitionElementFactory" file="/BeginTest/src/main/java/com/test/spring/aop1/memo.xml" pointcut-expression="execution(public String com.test.spring.aop1.MemoImpl.read(int))" proxy-target-class="false" throwing="e">
