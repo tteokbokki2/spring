@@ -11,4 +11,5 @@
 </aop-project>
 <aop-project name="MyBatisTest"/>
 <aop-project name="FileTest"/>
+<aop-project name="AOPTest"/>
 </aop-reference-model>
