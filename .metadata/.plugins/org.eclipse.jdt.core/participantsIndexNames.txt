@@ -13,8 +13,12 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\26597
 \NonTilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3080424700.index
 \MyBatisTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\736030761.index
+\RESTClientTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4146257906.index
 \FileTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2527139690.index
+\RESTClientTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1510894207.index
 \TilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2418513012.index
@@ -23,6 +27,8 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\16447
 \NonTilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\637501006.index
 \TilesTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2761915032.index
+\RESTTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\12654150.index
 \WebTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2322951401.index
