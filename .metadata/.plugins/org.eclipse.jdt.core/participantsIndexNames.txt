@@ -35,6 +35,8 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\23229
 \TilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1157349299.index
 \NonTilesTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2924628393.index
+\MyBatisSimpleTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3987504773.index
 \NonTilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3115410387.index
@@ -43,3 +45,5 @@ C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\32324
 \TilesTest\src\main\java
 C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3669953931.index
 \AOPTest\src\main\java
+C:\class\code\spring\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1001225260.index
+\WebSocketTest\src\main\java
