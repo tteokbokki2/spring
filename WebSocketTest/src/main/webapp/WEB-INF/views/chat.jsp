@@ -195,6 +195,10 @@
 					print('', `[\${message.sender}]님이 들어왔습니다.`, 'other', 'state', message.regdate);
 				} else if (message.code == '2') {
 					print('', `[\${message.sender}]님이 나갔습니다.`, 'other', 'state', message.regdate);
+				} else if (message.code == '3') {
+					print(message.sender, message.content, 'other', 'msg', message.regdate);
+				} else if (message.code == '4') {
+					printEmoticon(message.sender, message.content, 'other', 'msg', message.regdate);
 				}
 			}
 		}
@@ -220,11 +224,39 @@
 			
 			$('#list').append(temp);
 			
+			//새로운 내용 추가 + 스크롤을 바닥으로 내림
+			scrollList();
+			
+		}
+		
+		//이모티콘 출력
+		function printEmoticon(name, msg, side, state, time) {
+			
+			let temp = `
+			
+				<div class="item \${state} \${side}">
+					<div>
+						<div>\${name}</div>
+						<div style="background-color:#FFF;border:0;"><img src="/socket/resources/emoticon/\${msg}.png"></div>
+					</div>
+					<div>\${time}</div>
+				</div>
+			
+			`;
+			
+			$('#list').append(temp);
+			
+			//새로운 내용 추가 + 스크롤을 바닥으로 내림
+			setTimeout(scrollList(), 100);
+			
 		}
 		
 		//창이 닫히기 바로 직전에 발생하는 이벤트
 		$(window).on('beforeunload', function() {
-		
+			
+			$(opener.document).find('.in').css('opacity', 1);
+			$(opener.document).find('.in').prop('disabled', false);
+			
 			disconnect();
 			
 		});
@@ -243,6 +275,41 @@
 
 				ws.send(JSON.stringify(message));
 		}
+		
+		$('#msg').keydown(function(evt) {
+			if (evt.keyCode == 13) {
+				
+				//입력한 대화 내용을 서버로 전달
+				let message = {
+					code: '3',
+					sender: window.name,
+					receiver: '',
+					content: $('#msg').val(),
+					regdate: new Date().toLocaleString()
+				};
+				
+				
+				if ($('#msg').val().startsWith('/')) {
+					//메시지가 대화가 아닌 이모티콘일때 상태코드를 4로 정함
+					message.code = '4';
+					//alert(message.content);
+				}
+				
+				ws.send(JSON.stringify(message));
+				
+				$('#msg').val('').focus();
+				
+				if (message.code == '3') {
+					print(window.name, message.content, 'me', 'msg', message.regdate);
+				} else if (message.code == '4') {
+					printEmoticon(window.name, message.content, 'me', 'msg', message.regdate);
+				}
+			}
+		});
+		
+		function scrollList() {
+			$('#list').scrollTop($('#list').outerHeight() + 300);
+		}u
 		
 		
 	</script>

@@ -44,7 +44,7 @@ public class ChatServer {
 		Message message = gson.fromJson(msg, Message.class);
 		
 		//Message [code=1, sender=헉, receiver=, content=, regdate=2023. 12. 1. 오후 12:34:59]
-		//System.out.println(message);
+		System.out.println(message);
 		
 		if (message.getCode().equals("1")) {
 			for (Session s : sessionList) {
@@ -72,6 +72,30 @@ public class ChatServer {
 				}
 			}
 			
+		} else if (message.getCode().equals("3")) {
+			//대화 메시지
+			//- 보낸 사람 빼고 나머지 사람에게 전달
+			for (Session s : sessionList) {
+				if (s != session) { //보낸 사람 빼고
+					try {
+						s.getBasicRemote().sendText(msg);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		} else if (message.getCode().equals("4")) {
+			//대화 메시지
+			//- 보낸 사람 빼고 나머지 사람에게 전달
+			for (Session s : sessionList) {
+				if (s != session) { //보낸 사람 빼고
+					try {
+						s.getBasicRemote().sendText(msg);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
 		}
 	}
 	

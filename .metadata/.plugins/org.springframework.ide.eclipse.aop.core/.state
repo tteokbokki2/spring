@@ -7,6 +7,7 @@
 <aop-project name="TilesTest"/>
 <aop-project name="WebSocketTest"/>
 <aop-project name="MyBatisTest"/>
+<aop-project name="SecurityTest"/>
 <aop-project name="RESTTest"/>
 <aop-project name="WebTest"/>
 <aop-project name="BeginTest">
@@ -15,14 +16,14 @@
 </aspect-definition>
 </aop-project>
 <aop-project name="AOPTest">
+<aspect-definition advice-class-name="com.test.aspect.Log" advice-method-name="m3" advice-type="AFTER" aspect-end-line-number="29" aspect-name="log" aspect-start-line-number="29" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* com.test.controller.AOPController.list(..))" proxy-target-class="false">
+<aop-reference advice-type="AFTER" bean="1:BeansModel|2:AOPTest|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:AOPController:10" bean-file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aspect{Log.java[Log~m3" source-start-line="31" target="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.controller{AOPController.java[AOPController~list~QModel;" target-start-line="18"/>
+</aspect-definition>
 <aspect-definition advice-class-name="com.test.aspect.Log" advice-method-name="m2" advice-type="BEFORE" aspect-end-line-number="29" aspect-name="log" aspect-start-line-number="29" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="pc1()" proxy-target-class="false">
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:AOPTest|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:AOPController:10" bean-file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aspect{Log.java[Log~m2" source-start-line="26" target="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.controller{AOPController.java[AOPController~add~QModel;" target-start-line="28"/>
 </aspect-definition>
 <aspect-definition advice-class-name="com.test.aspect.Log" advice-method-name="m1" advice-type="AFTER" aspect-end-line-number="29" aspect-name="log" aspect-start-line-number="29" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="pc1()" proxy-target-class="false">
 <aop-reference advice-type="AFTER" bean="1:BeansModel|2:AOPTest|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:AOPController:10" bean-file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aspect{Log.java[Log~m1" source-start-line="21" target="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.controller{AOPController.java[AOPController~add~QModel;" target-start-line="28"/>
-</aspect-definition>
-<aspect-definition advice-class-name="com.test.aspect.Log" advice-method-name="m3" advice-type="AFTER" aspect-end-line-number="29" aspect-name="log" aspect-start-line-number="29" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(* com.test.controller.AOPController.list(..))" proxy-target-class="false">
-<aop-reference advice-type="AFTER" bean="1:BeansModel|2:AOPTest|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:AOPController:10" bean-file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/AOPTest/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.aspect{Log.java[Log~m3" source-start-line="31" target="=AOPTest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.test.controller{AOPController.java[AOPController~list~QModel;" target-start-line="18"/>
 </aspect-definition>
 </aop-project>
 <aop-project name="FileTest"/>
